@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,                      
+    "name": "find vocablary",                    
+    "version": "0.1",                            
+    "description": "translate and store words"   ,
+    "icons": {
+        "128": "hello.png"          
+      },  
+      "action": {
+        "default_title": "eirc的擴充套件",
+        "default_popup": "popup.html"
+      }, 
+      
+      "background": {                      
+        "service_worker":  "background.js"      
+      },  
+      "permissions": [     
+        "activeTab"  ,
+        "scripting", 
+        "contextMenus",
+        "tabs"
+      ],
+      "host_permissions":[
+        "http://*/*",
+        "https://*/*"
+      ],
+      "content_scripts" : [  
+        {  
+            "matches" : ["https://www.google.com/*"],  
+            "js" : ["myscript.js"]  
+    } ]
+}

@@ -1,0 +1,70 @@
+body {
+    width: 300px;
+    height: 200px;
+}
+
+.container{
+    
+}
+
+.search{
+    /*background-color: aqua;*/
+}
+
+.search_word{
+    display: flex;
+    
+}
+
+.review{
+    /*background-color: rgb(242, 255, 169);*/
+}
+
+.saveBtn{
+    background-color: red;
+    height: 10px;
+    width: 10px;
+    margin: auto ;
+}
+
+.word{
+    flex: 0 0 240px;
+    margin-left: 10px;
+    font-size: 20px;
+    /*background-color: rgb(247, 182, 103);*/
+}
+
+.chinese{
+    font-size: 18px;
+    margin-left: 10px;
+   /* background-color: bisque;*/
+}
+
+.review_word{
+    display: flex;
+    justify-content: space-between ;
+    /*background-color: blue;*/
+}
+
+.review_word > .word{
+    flex: 0 0 150px;
+    margin: 8px 15px;
+    font-size:16px;
+    /*background-color: aqua;*/
+}
+
+.review_word > .chinese{
+    margin: 8px 20px;
+    font-size:16px;
+   /* background-color: blueviolet;*/
+}
+
+.review_word > .saveBtn{
+    background-color: rgb(2, 138, 36);
+    height: 10px;
+    width: 10px;
+    /*margin: auto ;*/
+}
+
+
+
